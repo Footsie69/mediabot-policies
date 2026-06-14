@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Authorization Complete</title></head>
+<body style="font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px;">
+<h1>Authorization Complete</h1>
+<p>Copy the code below and paste it into the setup script:</p>
+<div id="code" style="background:#f0f0f0; padding:15px; border-radius:8px; font-family:monospace; word-break:break-all; font-size:18px;"></div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code') || '(no code found in URL)';
+  document.getElementById('code').textContent = code;
+</script>
+</body>
+</html>
